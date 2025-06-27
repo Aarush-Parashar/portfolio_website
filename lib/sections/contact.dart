@@ -5,16 +5,6 @@ import '../widgets/section_title.dart';
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
 
-  void _launchEmail() async {
-    final Uri email = Uri(
-      scheme: 'mailto',
-      path: 'aarushparashar2004@gmail.com',
-    );
-    if (!await launchUrl(email)) {
-      throw 'Could not launch $email';
-    }
-  }
-
   void _launchGitHub() =>
       launchUrl(Uri.parse("https://github.com/Aarush-Parashar"));
   void _launchLinkedIn() =>

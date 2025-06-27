@@ -6,13 +6,14 @@ class SkillsSection extends StatelessWidget {
 
   final List<String> skills = const [
     "Flutter & Dart",
-    "Firebase",
+    "Python",
+    "C/C++",
+    "Pandas & NumPy"
+        "Firebase",
     "Supabase",
     "YouTube Data API",
     "OAuth2 & Google Cloud",
     "REST APIs",
-    "Python",
-    "C/C++",
     "MongoDB",
     "Git & GitHub",
     "UI/UX Design",
