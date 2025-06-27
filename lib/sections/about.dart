@@ -14,7 +14,7 @@ class AboutSection extends StatelessWidget {
           SectionTitle(title: 'About Me'),
           SizedBox(height: 16),
           Text(
-            "Hey there! I'm Aarush Parashar, a Computer Science and Engineering student at SRM University specializing in Data Science and AI.\n  "
+            "Hello there! I'm Aarush Parashar, a Computer Science and Engineering student at SRM University specializing in Data Science and AI.\n  "
             "I'm passionate about building modern, efficient, and apps. I've worked on real-world projects like YouTube Post Manager, CSV Predictor, and an Instamart UI clone. "
             "With experience in Firebase, Supabase, and API integrations, I aim to bridge creators, data, and users through impactful tech.",
             style: TextStyle(fontSize: 18),
