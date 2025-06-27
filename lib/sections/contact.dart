@@ -6,14 +6,19 @@ class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
 
   void _launchEmail() async {
-    final Uri email = Uri(scheme: 'mailto', path: 'aarushparashar2004@gmail.com');
+    final Uri email = Uri(
+      scheme: 'mailto',
+      path: 'aarushparashar2004@gmail.com',
+    );
     if (!await launchUrl(email)) {
       throw 'Could not launch $email';
     }
   }
 
-  void _launchGitHub() => launchUrl(Uri.parse("https://github.com/Aarush-Parashar"));
-  void _launchLinkedIn() => launchUrl(Uri.parse("https://linkedin.com/in/aarush-parashar-19128b294"));
+  void _launchGitHub() =>
+      launchUrl(Uri.parse("https://github.com/Aarush-Parashar"));
+  void _launchLinkedIn() =>
+      launchUrl(Uri.parse("https://linkedin.com/in/aarush-parashar-19128b294"));
 
   @override
   Widget build(BuildContext context) {
@@ -24,15 +29,18 @@ class ContactSection extends StatelessWidget {
         children: [
           const SectionTitle(title: 'Contact Me'),
           const SizedBox(height: 16),
-          const Text("Want to collaborate or have a project in mind? Let’s connect!", style: TextStyle(fontSize: 18)),
+          const Text(
+            "Want to collaborate or have a project in mind? Let’s connect!",
+            style: TextStyle(fontSize: 18),
+          ),
           const SizedBox(height: 16),
           Wrap(
             spacing: 16,
             children: [
-              ElevatedButton.icon(
-                onPressed: _launchEmail,
+              TextButton.icon(
+                onPressed: () {},
                 icon: const Icon(Icons.mail),
-                label: const Text("Email"),
+                label: const Text("aarushparashar2004@gmail.com"),
               ),
               ElevatedButton.icon(
                 onPressed: _launchGitHub,
@@ -45,7 +53,7 @@ class ContactSection extends StatelessWidget {
                 label: const Text("LinkedIn"),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
